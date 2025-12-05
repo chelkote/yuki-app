@@ -8,6 +8,13 @@
       "when": 1764744057922,
       "tag": "0000_loud_mikhail_rasputin",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1764913427235,
+      "tag": "0001_giant_shinko_yamashiro",
+      "breakpoints": true
     }
   ]
 }

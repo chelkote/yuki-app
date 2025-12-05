@@ -3,6 +3,7 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "@/db"; // your drizzle instance
 import { nanoid } from "nanoid";
 import { getBaseURL } from "./get-base-url";
+import { anonymous } from "better-auth/plugins"
 
 export const auth = betterAuth({
     baseURL: getBaseURL(),
@@ -14,5 +15,6 @@ export const auth = betterAuth({
         database: {
             generateId: () => nanoid(10),
         }
-    }
+    },
+    plugins: [anonymous()],
 });
